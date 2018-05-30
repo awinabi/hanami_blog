@@ -1,0 +1,19 @@
+<h2>New Blog Post</h2>
+
+<%=
+  form_for :post, routes.posts_path do
+    div class: 'input' do
+      label      :title
+      text_field :title
+    end
+
+    div class: 'textarea' do
+      label      :body
+      text_area :body
+    end
+
+    div class: 'controls' do
+      submit 'Create Post'
+    end
+  end
+%>
